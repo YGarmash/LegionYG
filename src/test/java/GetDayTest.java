@@ -41,6 +41,13 @@ public class GetDayTest {
         System.out.println(day);
         assertEquals("Tuesday", day);
     }
+    @Test
+    public void positiveTests3() {
+        M8 mmm = new M8();
+        String day = mmm.arrayDaysOfTheWeek(1);
+        System.out.println(day);
+        assertEquals("Sunday", day);
+    }
 
     @Test
     public void NullPointerExceptionTest() {
